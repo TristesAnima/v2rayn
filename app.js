@@ -9,9 +9,9 @@ const scheduleCronstyle = () => {
       const page = await browser.newPage()
       await page.goto('https://w1.v2dns.xyz/auth/login')
       await page.focus('#email')
-      await page.keyboard.sendCharacter('chc2075983104@163.com')
+      await page.keyboard.sendCharacter('账号')
       await page.focus('#passwd')
-      await page.keyboard.sendCharacter('emmmm000')
+      await page.keyboard.sendCharacter('密码')
       await page.click('#login')
       page.on('load', async function () {
         await page.evaluate(async () => {
